@@ -23,10 +23,7 @@ def validate(f):
     try:
         with open(f) as fp:
             y = yaml.safe_load(fp)
-        print("==1==")
-        print(y)
-        print("==2==")
-        print(y.keys())
+
 
         if not y["metadata"]["name"]:
             yield Error("Resource name not found", f)
