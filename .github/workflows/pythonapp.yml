@@ -16,4 +16,4 @@ jobs:
     - uses: dschep/install-pipenv-action@v1
     - run: pipenv sync
     - name: run validate_dashboards
-      run: pipenv run validate_dashboards.py
+      run: pipenv run python validate_dashboards.py
